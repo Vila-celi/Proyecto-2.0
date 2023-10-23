@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+* {
+    font-family:"Roboto";
+    margin: 0%;
+    box-sizing: border-box;
+} 
+
+header {
+    padding: 5%;
+    color: antiquewhite;
+    width: 100%;
+    height: 100vh;
+    border: 5px solid black;
+}
+.tituloLogo {
+    display: flex;
+    margin-left: 25%;
+    text-align: center;
+    margin-top: 14%;
+}
+h1{
+    margin-top: 70px;
+    margin-left: 10px;
+    font-size: 4em;
+    text-shadow: 2px 2px rgb(23, 88, 208);
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 20px;
+    
+}
+li {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 5px;
+    border-radius: 15px;
+}
+
+.logo {
+    border-radius: 100px;
+}
+#fondoHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el comportamiento de la imagen para cubrir el contenedor */
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+    filter: blur(5px);
+}
+.marcas{
+    margin: 30px;
+    margin-right: 35%;
+}
+aside {
+    width: 400px;
+    background-color: #988b8bde;
+    position: absolute;
+    top: 110%;
+    left: 70%;
+    height: 500px;
+    overflow: auto;
+}
+h2, h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+#contenidoAside {
+    margin: 20px;
+}
+
+fieldset {
+    margin-left: 15px; /* Agrega un espacio entre el fieldset y el botón */
+}
+footer {
+    color: aliceblue;
+    background-color: black;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding: 15px;
+}
+#logoFooter{
+    width: 70px;
+    height: 70px;
+}
+#formFooter{
+    align-items: center;
+    margin-left: 25%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.representativasCarrousel {
+    width: 50%;
+    height: 50%;
+}
+/*Ajustar la resolucion para diferentes dispositivos */
+
+@media (max-width:480px){
+    body{
+        text-align: center;
+    }
+    ul {
+        flex-direction: column;
+    }
+    #fondoHeader, .representativasCarrousel, aside {
+       display: none; 
+    };
+}
