@@ -1,3 +1,4 @@
+/* Eventos en la barra de navegacion con funciones */
 const botones = document.querySelectorAll("nav ul li button");
 
 botones.forEach(boton => {
@@ -18,7 +19,7 @@ botones.forEach(boton => {
                 }, 3000);
     }});
 });
-
+/* Link de contactos en barra del footer con botones y eventos */
 urls = ["https://web.whatsapp.com/", "https://www.instagram.com/", "https://mail.google.com"]
 
 function salirDeLaPagina (id, url) {
@@ -45,3 +46,15 @@ const botonGmail = document.getElementById("botonGmail");
         salirDeLaPagina(botonGmail, urls[2]);
     });
 
+let botonForm = document.getElementById("botonFormulario");
+/* Restrincciones en el formulario de contacto */
+botonForm.addEventListener("click", function() {
+    let email = document.getElementById("email").value;
+    let mensaje = document.getElementById("mensaje").value;
+        if (email && mensaje) {
+            if (email.includes("@"))
+                alert("Mensaje enviado");}
+            else {
+                alert("Es necesario completar email y mensaje.")
+            }
+});

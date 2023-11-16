@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 *{
     font-family:"Roboto";
- /* margin:0px; */
+
+ /* margin:0px; sacar para ver que pasa en el mediaquares*/
     /* box-sizing: border-box; */
 } 
 
@@ -125,8 +126,6 @@ footer {
     display: none;
 }
 /*Ajustar la resolucion para diferentes dispositivos */
-
-
 
 @media (max-width:480px){
     body{
